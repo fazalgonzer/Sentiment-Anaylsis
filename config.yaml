@@ -1,0 +1,14 @@
+artifacts_root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_name: sealuzh/app_reviews
+  local_file: artifacts/save_dataset 
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  source_name: nlptown/bert-base-multilingual-uncased-sentiment
+  local_file: artifacts/save_dataset 
+  transformed_path: artifacts/transformed_data
+
+

@@ -2,7 +2,7 @@ import setuptools
 
 long_description="p orject where user can uploat list of reviwes or a review so th emodel can work on it "
 
-__version__= "0.0.0.0"
+__version__= "0.0.0.1"
 
 REPO_NAME="Sentiment_Anaylsis"
 AUTHOR_USER_NAME="fazal"
