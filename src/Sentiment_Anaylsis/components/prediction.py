@@ -3,7 +3,7 @@ import torch
 from Sentiment_Anaylsis.config.configuration import PredictionConfig
 
 
-class Prediction:
+class PredictionF:
      def __init__(self, config:PredictionConfig):
         self.config=config 
         self.model = AutoModelForSequenceClassification.from_pretrained(self.config.source_name,num_labels=5)

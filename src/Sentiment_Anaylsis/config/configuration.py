@@ -1,11 +1,12 @@
 from Sentiment_Anaylsis.constants import *
 from Sentiment_Anaylsis.utils.common import read_yaml , create_directories
 from Sentiment_Anaylsis.entity import Dataingestionconfig ,Datatransformationconfig ,Datatrainingconfig ,PredictionConfig
-
+CONFIG_FILE_PATH=Path("config.yaml")
+PARAMS_FILE_PATH=Path("params.yaml")
 class ConfigurationManger:
-    def __init__(self,config_file_path,params_file_path):
-        self.config=read_yaml(config_file_path)
-        self.params=read_yaml(params_file_path)
+    def __init__(self):
+        self.config=read_yaml(CONFIG_FILE_PATH)
+        self.params=read_yaml(PARAMS_FILE_PATH)
 
         create_directories([self.config.artifacts_root])
 
