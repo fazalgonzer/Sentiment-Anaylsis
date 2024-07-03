@@ -12,3 +12,12 @@ data_transformation:
   transformed_path: artifacts/transformed_data
 
 
+data_training:
+   root_dir: artifacts/training
+   source_name: nlptown/bert-base-multilingual-uncased-sentiment
+   transformed_path: artifacts/transformed_data
+   saving_model: artifact/saved_model
+
+    
+
+

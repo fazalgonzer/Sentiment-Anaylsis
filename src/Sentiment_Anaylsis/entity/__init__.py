@@ -14,4 +14,13 @@ class Datatransformationconfig:
     source_name: str
     local_file: str
     transformed_path: Path
+
+
+@dataclass
+class Datatrainingconfig:
+    root_dir:Path
+    source_name: str
+    transformed_path: Path
+    saving_model: Path
+
     
