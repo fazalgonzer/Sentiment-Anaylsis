@@ -18,6 +18,14 @@ data_training:
    transformed_path: artifacts/transformed_data
    saving_model: artifact/saved_model
 
+
+prediction:
+   root_dir: artifacts/prediction
+   source_name: nlptown/bert-base-multilingual-uncased-sentiment
+
+   
+
+
     
 
 

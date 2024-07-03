@@ -23,4 +23,8 @@ class Datatrainingconfig:
     transformed_path: Path
     saving_model: Path
 
-    
+
+@dataclass
+class PredictionConfig:
+    root_dir: Path
+    source_name: str

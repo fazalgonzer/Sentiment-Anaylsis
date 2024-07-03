@@ -1,6 +1,6 @@
 from Sentiment_Anaylsis.constants import *
 from Sentiment_Anaylsis.utils.common import read_yaml , create_directories
-from Sentiment_Anaylsis.entity import Dataingestionconfig ,Datatransformationconfig ,Datatrainingconfig
+from Sentiment_Anaylsis.entity import Dataingestionconfig ,Datatransformationconfig ,Datatrainingconfig ,PredictionConfig
 
 class ConfigurationManger:
     def __init__(self,config_file_path,params_file_path):
@@ -73,3 +73,23 @@ class ConfigurationManger:
         )
       
         return data_training_config
+    
+
+    def get_prediction_config(self) -> PredictionConfig:
+        config=self.config.prediction
+
+        create_directories([config.root_dir])
+        prediction_config=PredictionConfig(
+
+
+            root_dir=config.root_dir,
+
+
+            
+            source_name= config.source_name,
+           
+           
+                
+        )
+      
+        return prediction_config

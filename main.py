@@ -1,3 +1,6 @@
-from Sentiment_Anaylsis.logging import logger
+from Sentiment_Anaylsis.pipeline.stage_0_prediction import PredictionPipeline
 
-logger.info("started logging ")
+
+
+obj=PredictionPipeline("i hate this so much")
+labels=obj.predict()
